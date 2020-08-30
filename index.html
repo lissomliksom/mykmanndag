@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Myk Manndag</title>
+  <link href="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/css/halfmoon.min.css" rel="stylesheet" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body class="bg-light with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
+
+  <div class="page-wrapper with-navbar">
+
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">
+        <p class="font-size-12 text-uppercase">
+          <i class="far fa-heart text-danger mr-10"></i>
+          Myk Manndag
+        </p>
+      </a>
+      <div class="navbar-content ml-auto">
+        <button type="button" class="btn" id="toggle-btn" onclick="toggleMode()"><i class="far fa-moon"></i></button>
+      </div>
+    </nav>
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+
+          <div class="w-600 mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+            <div class="card">
+              <table class="table table-hover">
+                <thead>
+                  <th>#</th>
+                  <th>Myk Aktivitet</th>
+                  <th>Info</th>
+                </thead>
+                <tbody id="aktivitet-tabell"></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="aktivitet-modals"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/js/halfmoon.min.js"></script>
+  <script src="aktiviteter.js"></script>
+</body>
+</html>
